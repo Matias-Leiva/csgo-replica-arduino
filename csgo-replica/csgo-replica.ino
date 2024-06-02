@@ -17,19 +17,19 @@ void loop()
   selectGameMode();
   lcd.clear();
   lcd.setCursor(0, 0);
+  lcd.print("Selected Mode ");
+  lcd.print(gameMode);
+  delay(1500);
   switch (gameMode)
   {
   case 'A':
-    lcd.print("Selected Mode A");
+    gameModeA();
     break;
   case 'B':
-    lcd.print("Selected Mode B");
     break;
   case 'C':
-    lcd.print("Selected Mode C");
     break;
   case 'D':
-    lcd.print("Selected Mode D");
     break;
   }
   exit(0);
